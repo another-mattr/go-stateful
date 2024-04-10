@@ -8,7 +8,7 @@ import "fmt"
 type State string
 
 const (
-	Initial		 State = "Initial"
+	Initial         State = "Initial"
 	BeginExperiment State = "BeginExperiment"
 	NoResults       State = "NoResults"
 	OneResult       State = "OneResult"
@@ -22,7 +22,7 @@ type Event string
 
 const (
 	BeginExperimentEvent Event = "BeginExperimentEvent"
-	WaitForResults	   Event = "WaitForResults"
+	WaitForResults       Event = "WaitForResults"
 	ResultsEvent         Event = "ResultsEvent"
 )
 
