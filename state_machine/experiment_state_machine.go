@@ -13,7 +13,6 @@ const (
 	NoResults       State = "NoResults"
 	OneResult       State = "OneResult"
 	TwoResults      State = "TwoResults"
-	ThreeResults    State = "ThreeResults"
 	AnalyzeResults  State = "AnalyzeResults"
 )
 
@@ -70,7 +69,7 @@ func NewExperimentStateMachine() *ExperimentStateMachine {
 	sm.onEnter[NoResults] = func() {	fmt.Println("No results yet") }
 	sm.onEnter[OneResult] = func() {	fmt.Println("One result so far") }
 	sm.onEnter[TwoResults] = func() {	fmt.Println("Two results so far") }
-	sm.onEnter[AnalyzeResults] = func() {	fmt.Println("Three results are in! Let's analyze.") }
+	sm.onEnter[AnalyzeResults] = func() {	fmt.Println("The results are in! Let's analyze.") }
 
 	return sm
 }
